@@ -1,0 +1,7 @@
+.hidden {
+    display: none;
+}
+
+button.swal2-confirm.btn.fw-bold.btn-danger {
+    margin: 14px;
+}
