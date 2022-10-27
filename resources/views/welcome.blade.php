@@ -86,6 +86,7 @@
                                 confirmButtonText: "OK",
                             }).then((result) => {
                                 // location.reload();
+                                $('#description').val("");
                                 $("#refresh").click();
                             });
                         },
@@ -102,12 +103,12 @@
                                     "</div>"
                                 );
                             }
-                            Swal.fire({
-                                title: "Alert",
-                                text: e.message,
-                                icon: "warning",
-                                confirmButtonText: "OK",
-                            }).then((result) => {});
+                            // Swal.fire({
+                            //     title: "Alert",
+                            //     text: e.message,
+                            //     icon: "warning",
+                            //     confirmButtonText: "OK",
+                            // }).then((result) => {});
                         },
                     });
                 },

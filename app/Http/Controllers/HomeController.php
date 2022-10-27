@@ -73,7 +73,7 @@ class HomeController extends Controller
     public function add_task(Request $request)
     {
         $rules = [
-            'description'   => 'required', 'unique:task_history',
+            'description'   => 'required|unique:task_history,description',
         ];
         $messages = [
             'description.required' => 'This field is required.',
